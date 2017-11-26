@@ -7,6 +7,7 @@
  * @param {number} target
  * @param {number[][]} res 
  */
+// 先排序，固定第一个，后面的双指针逐渐逼近
 var find = function (nums, left, right, current, target, res) {
   while (left < right) {
     const leftValue = nums[left],
