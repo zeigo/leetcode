@@ -31,10 +31,8 @@ var find = function (nums, left, right, current, target, res) {
  */
 var threeSum = function (nums) {
   nums = nums.sort((a, b) => a - b);
-  var len = nums.length,
-    left, right, i, sum,
-    res = [];
-  for (i = 0; i < len - 2; i++) {
+  const res = [];
+  for (let i = 0, len = nums.length; i < len - 2; i++) {
     if (nums[i] === nums[i - 1]) // 去重
       continue;
     find(nums, i + 1, len - 1, nums[i], 0, res);
