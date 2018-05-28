@@ -7,7 +7,7 @@
  *     Interval(int s, int e) : start(s), end(e) {}
  * };
  */
-// 先排序再合并
+// 先排序再合并 O(nlgn)
 class Solution {
 public:
     vector<Interval> merge(vector<Interval>& intervals) {
