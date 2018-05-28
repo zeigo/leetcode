@@ -1,5 +1,4 @@
-// tmp[i-1] < tmp[i] <= n+i-k+1
-// 迭代
+// 迭代，tmp[i-1] < tmp[i] <= n+i-k+1，
 class Solution {
 public:
     vector<vector<int>> combine(int n, int k) {
