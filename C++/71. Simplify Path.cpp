@@ -1,3 +1,4 @@
+// 先split，".."向上一级，"."当前
 class Solution {
 public:
     string simplifyPath(string path) {
@@ -14,6 +15,6 @@ public:
        for(auto str : stk) {
            ans += "/" + str;
        }
-       return ans;
+       return stk.empty() ? "/" : ans;
     }
 };
