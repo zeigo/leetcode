@@ -7,7 +7,8 @@ public:
         return ans;
     }
 private:
-    // backtrack
+    // backtrack，从l开始截一段回文序列，放入path中，继续截下去，
+    // 截完后path放入ans，回溯，从path中pop，再截更长的一段
     void helper(string &s, vector<vector<string>> &ans, vector<string> &path, int l) {
         if(l == s.size()) {
             ans.push_back(path);
