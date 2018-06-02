@@ -19,4 +19,4 @@ public:
     }
 };
 
-// O(n)
+// O(n) cycle detection 
