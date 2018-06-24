@@ -4,7 +4,13 @@ leetcode practice
 
 ## Mark
 
-[300.Longest Increasing Subsequence](./C%2B%2B/300.Longest%20Increasing%20Subsequence.cpp)
+### 300.Longest Increasing Subsequence
+
+Topics: Dynamic Programming, Binary Search
+
+[Description](https://leetcode.com/problems/longest-increasing-subsequence/description/)
+
+[Code](./C%2B%2B/300.Longest%20Increasing%20Subsequence.cpp)
 
 time O(nlgn)
 原理：已有一个长度i的IS（递增子序列），如果新的元素大于结尾元素，则能形成长度i+1的IS，
